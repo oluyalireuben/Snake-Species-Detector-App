@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493824494039",
+    "project_id": "snakespeciesdetector",
+    "storage_bucket": "snakespeciesdetector.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493824494039:android:d383ab7fb99ab176e0e392",
+        "android_client_info": {
+          "package_name": "com.example.snakespiciesdetector"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4P9jdW9gACSu8oXo-Zo7NJvoMBSndlGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

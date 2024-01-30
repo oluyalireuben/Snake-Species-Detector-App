@@ -1,0 +1,83 @@
+plugins {
+   id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    compileSdk 33
+    namespace "com.example.snakespiciesdetector"
+
+    defaultConfig {
+        applicationId "com.example.snakespiciesdetector"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    aaptOptions {
+        noCompress "tflite" //makes sure the tflite file is not compressed
+    }
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+    buildToolsVersion '32.0.0'
+}
+configurations {
+    all {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
+        }
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+//    implementation 'com.google.firebase:firebase-auth:21.0.3'
+//    implementation 'com.google.firebase:firebase-database:20.1.0'
+//    implementation 'com.google.firebase:firebase-storage:20.1.0'
+ //   implementation 'com.google.firebase:firebase-firestore:24.1.1'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.4'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+
+
+
+    annotationProcessor 'androidx.room:room-compiler:2.5.0'
+ //   implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "androidx.cardview:cardview:1.0.0"
+   // implementation 'com.google.android.material:material:1.3.0'//gives the textInput layout
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //implementation 'com.google.firebase:firebase-analytics'
+    //implementation platform('com.google.firebase:firebase-bom:31.2.0')
+    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+      implementation 'com.google.android.gms:play-services-tflite-gpu:16.1.0'
+}

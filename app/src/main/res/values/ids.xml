@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="RegPageQuestion" type="id" />
+    <item name="registrationFullName" type="id" />
+    <item name="registrationIdNumber" type="id" />
+</resources>
