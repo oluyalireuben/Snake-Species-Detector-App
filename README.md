@@ -4,7 +4,6 @@
 Welcome to the Snake Species Detection App! This Android application is designed to facilitate communication between victims of snake incidents and doctors. Victims can register, report snake sightings, and provide details, while doctors can view and respond to incidents through a dedicated dashboard. The app aims to improve response times and enhance the overall efficiency of snakebite management.
 
 ## Features
-
 ### For Victims
 - **Registration**: Victims can create an account to access the app's features.
 - **Snake Sighting Report**: Users can update the snake species they encountered, providing crucial information for medical response.
